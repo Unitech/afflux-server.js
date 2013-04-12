@@ -1,13 +1,12 @@
 # MessageBus.js
 
 MessageBus.js is a server log message that dispatch log messages to differents storage via a router.
+It uses Axon as the message transport layer.
 
 ```
-       Logger       --|                      |--> DB
-Connect middlewares --|------> MessageBus.js |--> Console
-		                	     |--> SocketIO
+Axon Clients ------> MessageBus.js |------> Transports
 ```
-					     
+
 ## Server
 
 Features : 
