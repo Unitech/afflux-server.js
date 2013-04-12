@@ -23,7 +23,7 @@ var mb = new MB({
     keep_it_alive : true,
     router : [{
 	route : '*',
-	store : 'ConsoleBus'
+      	store : 'ConsoleBus'
     },{
 	route : 'console:*',
 	store : 'ConsoleBus'
