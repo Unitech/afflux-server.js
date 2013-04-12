@@ -13,23 +13,17 @@ var mb = new MB({
     log_port : 9995,
     keep_it_alive : true,
     router : [{
-	route : '*',
+	route : 'api:*',
 	store : 'ConsoleBus'
     },{
-	route : 'console:*',
+	route : 'carcass:*',
 	store : 'ConsoleBus'
     },{
-	route : 'redis:*',
+	route : 'reds:*',
 	store : 'RedisBus',
 	db : {
 	    port : 6379,
 	    host : '127.0.0.1'
 	}
     }]
-    // ,{
-    // 	route : 'cb:*',
-    // 	store : 'CouchbaseBus',
-    // 	db : {
-    // 	}
-    // }
 });

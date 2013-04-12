@@ -1,16 +1,30 @@
 {
-    "name": "MessageBus",
-    "version": "0.0.0",
-    "description": "ERROR: No README.md file found!",
+    "name": "MessageBus.js",
+    "version": "0.0.1",
+    "description": "MessageBus.js is a server log message that dispatch log messages to differents storage via a router.",
     "main": "index.js",
+    "keywords" : [
+	"logging",
+	"logman",
+	"logger",
+	"log",
+	"realtime",
+	"messagebus",
+	"axon"	
+    ],
     "dependencies" : {
 	"axon" : "*",
 	"redis" : "*",
-	"debug" : "*",
-	//"couchbase" : "*",
-	"postal" : "*"
+	"debug" : "*"
     },
-    "repository": "",
+    "readmeFilename": "README.md",
+    "engines": {
+	"node": "*"
+    },
+    "repository": {
+	"type": "git",
+	"url": "git://github.com/Alexandre-Strzelewicz/MessageBus.js.git"
+    },
     "author": "",
-    "license": "BSD"
+    "license": "MIT"
 }
