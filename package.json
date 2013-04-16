@@ -17,6 +17,10 @@
 	"redis" : "*",
 	"debug" : "*"
     },
+    "devDependencies" : {
+	"mocha" : "*",
+	"should" : "*"
+    },
     "readmeFilename": "README.md",
     "engines": {
 	"node": "*"

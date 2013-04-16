@@ -4,7 +4,7 @@ MessageBus.js is a server log message that dispatch log messages to differents s
 It uses Axon as the message transport layer.
 
 ```
-Axon Clients ------> MessageBus.js |------> Transports
+Axon Clients ------> MessageBus.js ------> Transports
 ```
 
 ## Server
