@@ -10,10 +10,10 @@
 var MB = require('..');
 
 var mb = new MB({
-    log_port : 9995,
+    log_port : 3044,
     keep_it_alive : true,
     router : [{
-	route : 'api:*',
+	route : 'log:*',
 	store : 'ConsoleBus'
     },{
 	route : 'carcass:*',

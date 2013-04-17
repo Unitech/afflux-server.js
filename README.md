@@ -1,10 +1,9 @@
-# MessageBus.js
+# afflux-server.js
 
-MessageBus.js is a server log message that dispatch log messages to differents storage via a router.
-It uses Axon as the message transport layer.
+Standalone log server, that routes and send message logs to different db/bucket/table/realtime interface.
 
 ```
-Axon Clients ------> MessageBus.js ------> Transports
+Log Clients ------> MessageBus.js ------> Transports
 ```
 
 ## Server
@@ -16,10 +15,10 @@ Features :
 - Connection/Closing report to transports
 
 ```javascript
-var MB = require('MessageBus');
+var MB = require('afflux-server');
 
 var mb = new MB({
-    log_port : 9995,
+    log_port : 3044,
     keep_it_alive : true,
     router : [{
        	route : '*',
@@ -37,10 +36,6 @@ var mb = new MB({
     }]
 });
 ```
-
-# Clients available
-
-- Logger client for MessageBus.js log server : https://github.com/Alexandre-Strzelewicz/MBClient
 
 # License
 

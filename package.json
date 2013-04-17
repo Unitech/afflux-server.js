@@ -1,17 +1,23 @@
 {
-    "name": "MessageBus.js",
+    "name": "afflux-server",
     "version": "0.0.1",
-    "description": "MessageBus.js is a server log message that dispatch log messages to differents storage via a router.",
+    "description": "afflux-server.js is a server log message that dispatch log messages to differents storage with the help of a router.",
     "main": "index.js",
     "keywords" : [
 	"logging",
 	"logman",
 	"logger",
 	"log",
+	"afflux",
+	"zeromq",
+	"fluentd",
 	"realtime",
 	"messagebus",
 	"axon"	
     ],
+    "scripts" : {
+	"start" : "node ./examples/server.js"
+    },
     "dependencies" : {
 	"axon" : "*",
 	"redis" : "*",
