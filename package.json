@@ -33,7 +33,7 @@
     },
     "repository": {
 	"type": "git",
-	"url": "git://github.com/Alexandre-Strzelewicz/MessageBus.js.git"
+	"url": "git://github.com/Alexandre-Strzelewicz/afflux-server.js.git"
     },
     "author": "",
     "license": "MIT"
