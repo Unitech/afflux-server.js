@@ -12,6 +12,7 @@ var MB = require('..');
 var mb = new MB({
     listen_port : 3044,
     rpc_port : 3055,
+    http_port : 9898,
     keep_it_alive : true,
     router : [{
 	route : '*',
@@ -21,9 +22,9 @@ var mb = new MB({
 	dest : 'ConsoleTransport'
     },{
 	route : '*',
-	dest : 'RedisTransport',
+	dest : 'ElasticSearchTransport',
 	conf : {
-	    port : 6379,
+	    port : 9200,
 	    host : '127.0.0.1'
 	}
     }]

@@ -21,8 +21,9 @@
     "dependencies" : {
 	"axon" : "*",
 	"axon-rpc" : "*",
-	"redis" : "*",
-	"debug" : "*"
+	"elastical" : "*",
+	"debug" : "*",
+	"connect" : "*"
     },
     "devDependencies" : {
 	"mocha" : "*",
