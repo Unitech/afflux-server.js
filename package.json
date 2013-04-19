@@ -20,6 +20,7 @@
     },
     "dependencies" : {
 	"axon" : "*",
+	"axon-rpc" : "*",
 	"redis" : "*",
 	"debug" : "*"
     },
