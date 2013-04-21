@@ -7,6 +7,6 @@ var client = new rpc.Client(req);
 req.connect(3055);
 
 
-client.call('push_msg', 'my:event', {dt : 'ok'}, function(err) {
+client.call('push_msg', 'myasdajskdjsakldjlaksdjklsajdkljdaskljasdlkjasdasdaskdlkdsal;kdsa:event', {dt : 'ok'}, function(err) {
     console.log(arguments);
 });

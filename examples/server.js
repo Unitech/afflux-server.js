@@ -10,18 +10,16 @@
 var MB = require('..');
 
 var mb = new MB({
-    listen_port : 3044,
-    rpc_port : 3055,
-    http_port : 9898,
-    keep_it_alive : true,
+    axon_port : 40356,
+    rpc_port : 40357,
     router : [{
-	route : '*',
+	route : '#',
 	dest : 'ConsoleTransport'
     },{
 	route : 'carcass:*',
 	dest : 'ConsoleTransport'
     },{
-	route : '*',
+	route : '#',
 	dest : 'ElasticSearchTransport',
 	conf : {
 	    port : 9200,

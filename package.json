@@ -23,7 +23,8 @@
 	"axon-rpc" : "*",
 	"elastical" : "*",
 	"debug" : "*",
-	"connect" : "*"
+	"connect" : "*",
+	"postal" : "*"
     },
     "devDependencies" : {
 	"mocha" : "*",
