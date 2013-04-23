@@ -16,7 +16,8 @@
 	"axon"	
     ],
     "scripts" : {
-	"start" : "node ./examples/server.js"
+	"start" : "node ./examples/server.js",
+	"test" : "mocha"
     },
     "dependencies" : {
 	"axon" : "*",
